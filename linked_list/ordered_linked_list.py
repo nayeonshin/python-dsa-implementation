@@ -4,7 +4,7 @@ from node import Node
 
 class OrderedLinkedList(LinkedList):
     def __init__(self) -> None:
-        LinkedList.__init__(self)
+        super().__init__()
 
     def search(self, value: int) -> bool:
         """Check if the list contains a node with the value."""
