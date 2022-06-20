@@ -7,9 +7,6 @@ class MaxHeap(BinaryHeap):
     def __init__(self) -> None:
         super().__init__()
 
-    def temp_print(self) -> None:
-        print(self.heap[1:])
-
     def insert(self, key: int) -> None:
         self.heap.append(key)
         self.size += 1
