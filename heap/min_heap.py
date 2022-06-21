@@ -4,6 +4,11 @@ from binary_heap import BinaryHeap
 
 
 class MinHeap(BinaryHeap):
+    """
+    - parent index: index // 2
+    - left child index: index * 2
+    - right child index: (index * 2) + 1
+    """
     def __init__(self) -> None:
         super().__init__()
 
