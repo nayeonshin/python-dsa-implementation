@@ -2,6 +2,9 @@ from typing import List
 
 
 def bubble_sort(nums: List[int]) -> None:
+    """
+    Time complexity: O(n^2) where n is len(nums)
+    """
     for i in reversed(range(1, len(nums))):
         for j in range(i):
             if nums[j] > nums[j + 1]:
