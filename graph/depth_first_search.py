@@ -12,6 +12,9 @@ visited_nodes = set()  # Set to keep track of visited nodes
 
 
 def depth_first_search(visited_nodes: set, graph: dict, node: str) -> None:
+    """
+    Time complexity: O(|V| + |E|)
+    """
     if node not in visited_nodes:
         print(node, end=" ")
         visited_nodes.add(node)
