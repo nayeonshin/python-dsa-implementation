@@ -2,7 +2,7 @@ from typing import Optional
 
 
 class MinHeap:
-    """Alternative implementation with different formulas for indices
+    """Alternative implementation with different formulae for indices
     - parent index: (index - 1) // 2
     - left child index: (index * 2) + 1
     - right child index: (index * 2) + 2
