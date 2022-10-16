@@ -43,7 +43,7 @@ class OrderedLinkedList(LinkedList):
 
         previous, current = dummy_head, dummy_head.next
 
-        while current and current.value < node.value:
+        while current and (current.value < node.value):
             previous, current = current, current.next
 
         node.next = current
