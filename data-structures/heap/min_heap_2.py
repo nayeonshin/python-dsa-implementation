@@ -30,7 +30,7 @@ class MinHeap:
         return minimum
 
     def _percolate_up(self, index: int) -> None:
-        while (index - 1) // 2 >= 0:
+        while ((index - 1) // 2) >= 0:
             parent_index = (index - 1) // 2
 
             if self.heap[index] < self.heap[parent_index]:
@@ -39,7 +39,7 @@ class MinHeap:
             index = parent_index
 
     def _percolate_down(self, index: int) -> None:
-        while (index * 2) + 1 < self.size:
+        while ((index * 2) + 1) < self.size:
             min_child_index = self._get_min_child_index(index)
 
             if self.heap[index] > self.heap[min_child_index]:
