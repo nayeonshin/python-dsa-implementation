@@ -26,7 +26,7 @@ class MaxHeap(BinaryHeap):
         return maximum
 
     def _percolate_up(self, index: int) -> None:
-        while index // 2 > 0:
+        while (index // 2) > 0:
             parent_index = index // 2
 
             if self.heap[index] > self.heap[parent_index]:
